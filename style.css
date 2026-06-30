@@ -310,3 +310,31 @@ font-size:30px;
     align-items:center;
     font-size:12px;
 }
+.quick-menu{
+display:flex;
+gap:12px;
+overflow-x:auto;
+padding:15px;
+background:#fff;
+}
+
+.quick-menu::-webkit-scrollbar{
+display:none;
+}
+
+.quick-menu button{
+flex:none;
+padding:12px 22px;
+border:none;
+border-radius:30px;
+background:#0d8a41;
+color:#fff;
+font-weight:600;
+cursor:pointer;
+white-space:nowrap;
+transition:.3s;
+}
+
+.quick-menu button:hover{
+background:#087536;
+}
