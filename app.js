@@ -1,0 +1,1 @@
+console.log("Wahat Al Khair V2 Loaded");
