@@ -30,7 +30,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 </div>
 
 <div class="search-box">
-<input type="text" placeholder="Search fresh vegetables & fruits...">
+<input
+type="text"
+id="searchInput"
+placeholder="Search fresh vegetables & fruits...">
 <button>
 <i class="fa-solid fa-magnifying-glass"></i>
 </button>
@@ -71,7 +74,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 <section class="categories">
 
-<div class="category">
+<div class="category" onclick="filterProducts('vegetable')">
 
 🥬
 
@@ -79,7 +82,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 </div>
 
-<div class="category">
+<div class="category" onclick="filterProducts('fruit')">
 
 🍎
 
