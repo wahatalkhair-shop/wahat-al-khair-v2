@@ -199,3 +199,33 @@ font-size:30px;
 }
 
 }
+
+.offer-slider{
+    margin:30px;
+    height:180px;
+    background:#0d8a41;
+    color:white;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    overflow:hidden;
+}
+
+.slide{
+    display:none;
+}
+
+.slide.active{
+    display:block;
+}
+
+.slide h2{
+    font-size:32px;
+}
+
+.slide p{
+    margin-top:10px;
+    font-size:18px;
+}
