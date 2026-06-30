@@ -17,3 +17,6 @@ current=0;
 slides[current].classList.add("active");
 
 },3000);
+function toggleCart(){
+    alert("Cart system will be added in Phase 3");
+}
