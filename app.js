@@ -1,3 +1,11 @@
+const SUPABASE_URL = "https://gvtquivrqcjfjfhmmbgn.supabase.co";
+
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd2dHF1aXZycWNqZmpmaG1tYmduIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIzMjY5MzMsImV4cCI6MjA5NzkwMjkzM30.jDFA09L24SzTlPm9JlDFhuIIBOso_61QpjTSPkt-0vY";
+
+const supabaseClient = supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+);
 console.log("Wahat Al Khair V2 Loaded");
 
 const slides=document.querySelectorAll(".slide");
@@ -47,3 +55,18 @@ function filterProducts(type){
 alert(type + " filter will connect with Supabase soon.");
 
 }
+async function testConnection(){
+
+const { data, error } = await supabaseClient
+.from("products")
+.select("*");
+
+if(error){
+console.log(error);
+}else{
+console.log(data);
+}
+
+}
+
+testConnection();
