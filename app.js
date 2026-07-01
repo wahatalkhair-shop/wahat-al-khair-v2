@@ -70,3 +70,20 @@ console.log(data);
 }
 
 testConnection();
+
+async function loadProducts() {
+
+    const { data, error } = await supabaseClient
+        .from("products")
+        .select("*")
+        .order("id", { ascending: false });
+
+    if (error) {
+        console.error(error);
+        return;
+    }
+
+    console.log("Products:", data);
+}
+
+loadProducts();
